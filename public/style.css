@@ -1,0 +1,109 @@
+body {
+    background-color: slategray;
+    display: grid;
+    justify-content: center;
+    font-family: cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+        "prev-message"
+        "compose-message";
+    grid-gap: 10px;
+    background-color: #0f2229;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 50px auto;
+    width: 500px;
+    min-width:320px;
+    height: 70vh;
+}
+
+.container span p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#previous-message {
+    grid-area: prev-message;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: initial;
+    /* display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end; */
+}
+
+#previous-message p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+#selfMessage {
+    text-align: left;
+    color: lime;
+}
+
+#peerMessage {
+    text-align: right;
+    color: cyan;
+}
+
+/* #previous-message span {
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+} */
+
+#new-message {
+    grid-area: compose-message;
+    display: flex;
+    align-items: flex-end;
+}
+
+#message-text {
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    padding: 15px;
+    line-height: 20px;
+    overflow: auto;
+    resize: none;
+    background-color: #1f3841;
+    border: none;
+    outline: none;
+    color: aqua;
+    font-family: cursive;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1)
+}
+
+#send-message {
+    border-radius: 15px;
+    border: none;
+    margin-left: 10px;
+    /* border: 1px solid black; */
+    background-color: #1f3841;
+    cursor: pointer;
+    /* background: none; */
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    transform: rotate(-45deg);
+}
