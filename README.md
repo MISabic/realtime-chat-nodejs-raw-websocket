@@ -1,4 +1,4 @@
-# chatapp-using-raw-websocket
+# Realtime chat with NodeJS and raw websocket
 
 ### Live version of the application: https://realtimechat-websocket.herokuapp.com
 
